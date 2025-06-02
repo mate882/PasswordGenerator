@@ -8,23 +8,27 @@
 </head>
 <body>
     
-    <h1 class="title">Random Number Generators</h1>
+    <h1 class="title">Random Number Generators</h1><br>
 
     <div id="details">
         <label>Write a lenght of password</label>
-        <input id="lenght" type="text">
+        <input id="lenght" type="number" min="1"><br>
 
-        <label>Allow LowerCase</label>
-        <input id="lowercase" type="checkbox">
+        <div class="checkboxes">
+            <label>Allow LowerCase</label>
+            <input id="lowercase" type="checkbox"><br>
 
-        <label>Allow UpperCase</label>
-        <input id="uppercase" type="checkbox">
+            <label>Allow UpperCase</label>
+            <input id="uppercase" type="checkbox"><br>
 
-        <label>Allow Numbers</label>
-        <input id="numbers" type="checkbox">
+            <label>Allow Numbers</label>
+            <input id="numbers" type="checkbox"><br>
 
-        <label>Allow Symbols</label>
-        <input id="symbols" type="checkbox">
+            <label>Allow Symbols</label>
+            <input id="symbols" type="checkbox"><br>
+        </div>
+
+        <button type="submit" id="generate">Generate</button>
     </div>
 
     <h1 id="generated"></h1>
