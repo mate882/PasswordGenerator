@@ -25,6 +25,11 @@ function generatePassword(length, includeLowerCase, includeUpperCase, includeNum
         return "";
     }
 
+    if (length > 20) {
+        alert("Password length must not exceed 20 characters");
+        return "";
+    }
+
     if (allowedchars.length === 0) {
         alert("You need to select at least 1 character type");
         return "";
